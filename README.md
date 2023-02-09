@@ -62,10 +62,15 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 -Downlad and install HeidiSQL. Open HeidiSQL. Create a new session, use root as username and create a password. Connect to the session. Create a new database called osTicket.
 - Back to osTicket in the browser; for MySQL Database: osTicket, MySQL Username: root, MYSQL Password: password. Click the Install Now button.
 - Go to help desk login page https://localhost/osTicket/scp/login.php
-- The end users osTicket url is http://localhost/osTicket/
+
+<p>
+<img src="https://github.com/veralestina/Images/blob/main/Github%20information/useradminloginosticket.png" height="40%" width="40%" alt="useradminloginpage"/>
+</p>
+
+- Login with the credentials created earlier to check that everything works. Should successfully login to admin page if everything done correctly. 
 - Delete: C:\inetpub\wwwroot\osTicket\setup
 - Set Permissions to Read Only: only: C:\inetpub\wwwroot\osTicket\include\ost-config.php
 
 And the Prerequisites and Installations for the creation of OSTicket have been completed.
 
-
+Note - - The end users osTicket url is http://localhost/osTicket/
