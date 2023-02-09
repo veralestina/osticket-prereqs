@@ -20,6 +20,11 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 - Create a Virtual Machine in Azure - create a Resource Group first
 - Create a Windows 10 Virtual Machine (VM) with 2-4 Virtual CPUs. Allow the VM to create a new Virtual Network, VNet.
+
+<p>
+<img src="[https://i.imgur.com/DJmEXEB.png](https://imgur.com/3OSpYnd)" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+
 - Enable IIS in Windows with CGI
 - Download and install PHP Manager for IIS
 - Download and install Rewrite Module
@@ -44,7 +49,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 - Set Permissions to Read Only: only: C:\inetpub\wwwroot\osTicket\include\ost-config.php
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="[https://i.imgur.com/DJmEXEB.png](https://imgur.com/3OSpYnd)" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 
 <p>
