@@ -18,14 +18,21 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <h2>Installation Steps to create osTicket</h2>
 
-- Create a Virtual Machine in Azure - create a Resource Group first
+- Create a Resource Group in Azure as RG.
+- Create a Virtual Machine in Azure as VM-osTicket.
 - Create a Windows 10 Virtual Machine (VM) with 2-4 Virtual CPUs. Allow the VM to create a new Virtual Network, VNet.
 
 <p>
-<img src="[https://i.imgur.com/DJmEXEB.png](https://imgur.com/3OSpYnd)" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/veralestina/Images/blob/main/Github%20information/vmipaddress.png" height="50%" width="50%" alt="VM"/>
 </p>
 
+
 - Enable IIS in Windows with CGI
+
+<p>
+<img src="https://github.com/veralestina/Images/blob/main/Github%20information/iiscgi.png" height="30%" width="30%" alt="IIS with CGI"/>
+</p>
+
 - Download and install PHP Manager for IIS
 - Download and install Rewrite Module
 - Create the directoy C:\PHP
@@ -36,8 +43,19 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 - Register PHP from within IIS
 - Reload IIS
 - Go to sites, Default, oTicket and on the right, click Browse*.80
-- Not all extensions on site are enabled so go back to IIS, sites, Default, osTicket, double-click PHP Manager, clikc Enable or disable an etension; Enable: php_imap.dll, php_intl.dll, php_opcache.dll.
+- On osTicket, will notice that some red X's on certain extensions. See image below.
+
+<p>
+<img src="https://github.com/veralestina/Images/blob/main/Github%20information/notcompleteosticket.png" height="40%" width="40%" alt="Notcompletleyworkingosticketsite"/>
+</p>
+
+- This means that not all extensions on site have been enabled, so go back to IIS, sites, Default, osTicket, double-click PHP Manager, clikc Enable or disable an etension; Enable: php_imap.dll, php_intl.dll, php_opcache.dll.
 - Refresh the osTicket site to observe the newly enabled extensions.
+
+<p>
+<img src="https://github.com/veralestina/Images/blob/main/Github%20information/completeosticket.png" height="40%" width="40%" alt="workingosticketsite"/>
+</p>
+
 - Rename C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php to C:\inetpub\wwwroot\osTicket\include\ost-config.php
 - For ost-config.php; Disable inheritance, Remove All. New Permissions, change to Everyone and All.
 - Go back to osTicket in browser and name Helpdesk and set a default email - this email will receive the email from customers placing a ticket.
@@ -48,22 +66,6 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 - Delete: C:\inetpub\wwwroot\osTicket\setup
 - Set Permissions to Read Only: only: C:\inetpub\wwwroot\osTicket\include\ost-config.php
 
-<p>
-<img src="[https://i.imgur.com/DJmEXEB.png](https://imgur.com/3OSpYnd)" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
+And the Prerequisites and Installations for the creation of OSTicket have been completed.
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
